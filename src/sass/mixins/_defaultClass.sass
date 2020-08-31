@@ -1,0 +1,20 @@
+.padShow
+	display: none!important
+.phoneShow 
+	display: none!important
+
+@media screen and (max-width: $pad)
+	.padShow
+		display: block!important
+	.padHide
+		display: none!important
+	.padShow.hide
+		display: none!important
+
+@media screen and (max-width: $phone)
+	.phoneHide 
+		display: none!important
+	.phoneShow 
+		display: block!important
+	.phoneShow.hide
+		display: none!important

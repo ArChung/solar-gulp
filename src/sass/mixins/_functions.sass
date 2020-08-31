@@ -1,0 +1,65 @@
+
+=pad 
+	@media screen and (max-width: $pad)
+		@content 
+=phone 
+	@media screen and (max-width: $phone)
+		@content 
+=pc 
+	@media screen and (min-width: $phone+1)
+		@content 	
+  
+=bg($pic)
+  width: image-width($pic)
+  height: image-height($pic)
+  background-image: image-url($pic)
+
+
+
+=bgi($pic)
+  background-image: image-url($pic)
+
+
+
+=full
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+
+
+
+=ratio($width, $height)
+	position: relative
+	&:before
+		display: block
+		content: ""
+		width: 100%
+		padding-top: $height / $width * 100%
+	> *
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+
+=dTime($d:0.3s)
+	transition: all $d
+  // display: flex
+
+=coverBg($pic: null)
+  background-size: cover
+  background-position: 50% 50%
+  background-repeat: no-repeat 
+  @if ($pic)
+    +bgi($pic)
+
+
+
+=containBg($pic: null)
+  background-size: contain
+  background-position: 50% 50%
+  background-repeat: no-repeat 
+  @if ($pic)
+    +bgi($pic)

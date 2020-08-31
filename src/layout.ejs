@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> <%- title %> </title>
+  <!-- hiding the Browser’s User Interface -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- iOS 6 -->
+  <meta name="apple-mobile-web-app-title" content="">
+  <!-- meta start -->
+  <meta name="title" content="<%- title %>" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="copyright" content="" />
+  <link rel="image_src" href="" />
+
+  <!-- OG -->
+  <meta property="og:title" content="<%- title %>" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="fb:app_id" content="" />
+  <!-- CSS -->
+  <!-- build:css css/lib.css -->
+  <!-- endbuild -->
+  <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+  <!-- sider -->
+  <% include conponents/sider %>
+  <!-- sider END-->
+
+  <!-- navbar -->
+  <% include conponents/header %>
+  <!-- navbar END -->
+
+  <div id='mainContainer'>
+    <!-- contents -->
+    <%- contents %>
+    <!-- contents END -->
+  </div>
+
+  <!-- footer -->
+  <% include conponents/footer %>
+  <!-- footer END -->
+
+
+  <!-- build:js js/lib.js -->
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/fastclick.js"></script>
+  <!-- endbuild -->
+  <!-- js -->
+  <script src="js/all.js"></script>
+  <!-- js END-->
+</body>
+
+</html>
