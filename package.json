@@ -1,7 +1,7 @@
 {
   "name": "sweataste-gulp4.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "```bash # 安裝環境 npm install gulp -g",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -53,5 +53,13 @@
     "imagemin-pngquant": "^9.0.0",
     "imagemin-zopfli": "^7.0.0",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArChung/solar-gulp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArChung/solar-gulp/issues"
+  },
+  "homepage": "https://github.com/ArChung/solar-gulp#readme"
 }

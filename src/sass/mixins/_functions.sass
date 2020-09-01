@@ -44,6 +44,8 @@
 		right: 0
 		bottom: 0
 
+
+
 =dTime($d:0.3s)
 	transition: all $d
   // display: flex
@@ -63,3 +65,18 @@
   background-repeat: no-repeat 
   @if ($pic)
     +bgi($pic)
+
+@function strip-unit($number)
+  @if type-of($number) == 'number' and not unitless($number)
+    @return $number / ($number * 0 + 1)
+  @return $number
+
+=ratioBg($pic)
+  max-width: image-width($pic)
+  width: 100%
+  +coverBg($pic)
+  &:before
+    display: block
+    content: ""
+    width: 100%
+    padding-top: strip-unit(image-height($pic)) / strip-unit(image-width($pic)) * 100%

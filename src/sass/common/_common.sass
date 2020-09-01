@@ -1,1 +1,158 @@
 // commons
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap')
+$c-y: #fcbd50
+$c-b: #212e34
+
+html,body
+  font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei",  "STHeiti","STHeiti Light", Arial, sans-serif
+  color: $c-b
+  font-size: 20px
+  letter-spacing: 0.06em
+
+.swiper-container
+  width: 100%
+  position: relative
+  .swiper-button-next, .swiper-button-prev
+    color: $c-y
+  
+  .swiper-pagination-bullet
+    background-color: white
+    opacity: .8
+  .swiper-pagination-bullet-active
+    background-color: $c-y
+    opacity: 1
+
+
+.mt-4
+  margin-top: 50px!important
+
+.mt-3
+  margin-top: 30px!important
+
+.i-play
+  display: inline-block
+  vertical-align: text-top
+  margin-top: 6px
+  margin-right: 12px
+  +bg('i-play.png')
+
+
+.i-phone
+  display: inline-block
+  vertical-align: text-top
+  margin-top: -2px
+  margin-right: 12px
+  +bg('i-phone.png')
+
+.i-phone2
+  display: inline-block
+  vertical-align: text-top
+  margin-top: -2px
+  margin-right: 12px
+  +bg('i-phone2.png')
+
+.i-fax
+  display: inline-block
+  vertical-align: text-top
+  margin-top: -2px
+  margin-right: 12px
+  +bg('i-fax.png')
+
+.i-mail
+  display: inline-block
+  vertical-align: text-top
+  margin-top: -2px
+  margin-right: 12px
+  +bg('i-mail.png')
+
+.i-map
+  display: inline-block
+  vertical-align: text-top
+  margin-top: -2px
+  margin-right: 12px
+  +bg('i-map.png')
+.container
+  max-width: 950px
+  padding: 0px 25px
+  margin: 0 auto
+  width: 100%
+
+
+.high-light
+  display: inline-block
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    bottom: -15px
+    left: 0
+    width: 100%
+    height: 5px
+    background-color: $c-y
+.ta-c
+  text-align: center
+.page
+  padding: 120px 0 120px
+
+.p-title
+  position: relative
+  h1
+    font-size: 50px
+    position: relative
+    font-weight: 500
+    z-index: 2
+    letter-spacing: 0.2em
+  .en
+    font-size: 80px
+    position: absolute
+    top: -50px
+    left: -50px
+    letter-spacing: 0.1em
+    color: rgba(white,.5)
+    text-transform: uppercase
+    white-space: nowrap
+    &.s-en
+      font-size: 64px
+  &.ta-c
+    .en
+      left: 50%
+      transform: translate(-50%, 0)
+p
+  line-height: 200%
+
+
+.df
+  display: flex
+  &.jcc
+    justify-content: center
+  &.aic
+    align-items: center
+  &.fdc
+    flex-direction: column
+  
+.y-btn
+  font-size: 18px
+  padding: 12px 32px
+  position: relative
+  display: inline-block
+  cursor: pointer
+
+  .b-txt
+    position: relative
+    z-index: 2
+    letter-spacing: 0.1em
+  .btn-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $c-y
+    z-index: 0
+    transform: skew(15deg, 0deg)
+    +dTime
+  &:hover
+    .btn-bg
+      background-color: lighten($c-y,8%)
+
+  

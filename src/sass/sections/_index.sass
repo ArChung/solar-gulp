@@ -1,1 +1,280 @@
 // index.sass
+
+
+  
+
+#index 
+  margin-top: 60px
+  .swiper-slide
+    height: calc(100vh - 60px)
+    max-height: 700px
+    +coverBg
+
+  .container
+    max-width: 1024px
+    padding: 0 50px
+    padding-top: 100px
+    .y-btn
+      margin-top: 18px
+    
+    .txt
+      font-size: 50px
+      font-weight: bold
+      line-height: 150%
+      letter-spacing: 0.15em
+      color: white
+      text-shadow: 2px 2px 5px rgba(black,.5)
+      stong
+        color: $c-y
+      .t2 
+        margin-left: 70px
+
+
+#about
+  background-color: #c2e9ed
+  position: relative
+  padding-bottom: 440px
+  overflow: hidden
+  p
+    max-width: 630px
+  strong
+    font-size: 30px
+    font-weight: 500
+  .pic
+    +bg('demo-1.png')
+    position: absolute
+    bottom: -120px
+    left: 50%
+    transform: translate(-50%, 0)
+
+
+#resources
+  background-color: #f8edd9
+
+  .chats
+    width: 100%
+    max-width: 789px
+    margin: 0 auto
+    position: relative
+    >.chat:not(:first-child)
+      position: absolute
+      top: 0
+      left: 0
+      +dTime(.3s)
+
+    .c-1
+      +ratioBg('chat-01.png')
+
+    .c-2
+      +ratioBg('chat-02.png')
+      &.active
+        transform: scale(1.02)
+    .c-3
+      +ratioBg('chat-03.png')
+      &.active
+        transform: scale(1.02)
+    .c-4
+      +ratioBg('chat-04.png')
+      &.active
+        transform: scale(1.02)
+      
+    
+    .btns
+      +full
+      .btn
+        position: absolute
+
+        &.b-1
+          width: 66%
+          top: 0%
+          left: 0%
+          height: 37%
+          cursor: pointer
+          
+        &.b-2
+          width: 33%
+          top: 20%
+          left: 66%
+          height: 60%
+          cursor: pointer
+        &.b-3
+          width: 60%
+          top: 50%
+          left: 0%
+          height: 50%
+          cursor: pointer
+        &.b-4
+          width: 30%
+          top: 35%
+          left: 35%
+          height: 30%
+
+
+#process
+  background-color: #edecec
+  img
+    display: block
+    margin: 0 auto
+
+#benefits
+  background-color: $c-y
+  .picTxt
+    display: flex
+    >*
+      width: 50%
+      padding: 130px 0 100px
+    .pic  
+      +coverBg
+    .txtBox
+      img
+        display: block
+        margin: 0 auto
+        margin-top: 60px
+      .p-title
+        .en
+          color: rgba(white,.2)
+          // font-size: 64px
+          top: -40px
+        h1
+          color: white
+          text-shadow: 3px 3px 5px rgba(black,0.15)
+
+
+#works
+  background-color: #edecec
+  .container
+    max-width: 1200px
+  .swiper-container
+    &.swiper-container-1
+      width: 100%
+
+  .swiper-container-outer
+    margin-top: 70px
+  .swiper-container-inner
+    .swiper-slide
+      +coverBg
+    // height: 550px
+  .txtBox
+    background-color: white
+    width: 550px
+    overflow-y: scroll
+    height: 600px
+    .txt-container
+      width: 100%
+      padding: 30px 20px  
+      line-height: 120%
+
+
+    h2
+      margin-bottom: 30px
+      font-size: 24px
+    p
+      line-height: 150%
+      margin-bottom: 30px
+      font-size: 18px
+      letter-spacing: auto
+  .pic
+    // flex: 1
+  .videoBtn
+    padding: 8px 32px
+    background-color: $c-y
+    display: inline-block
+    border-radius: 50px
+    font-size: 18px
+    cursor: pointer
+    +dTime
+    .i-play
+      +dTime(.3s)
+    &:hover
+      background-color: lighten($c-y,8%)
+      .i-play
+        transform: translate(5px, 0)
+    
+  .sliderBtns
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-top: 30px
+    .sliderBtn
+      width: 50px
+      height: 50px
+      background-color: white
+      border-radius: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 10px
+      cursor: pointer
+      +dTime
+      &:hover
+        background-color: rgba($c-y,1)
+      &.active
+        background-color: rgba($c-y,1)
+        width: 100px
+
+
+    
+.banner
+  width: 100%
+  height: 466px
+  +coverBg('banner.jpg')
+  background-position: 100% 50%
+
+
+#qa
+  background-color: #f2f2f2
+
+  .accordion
+    margin-top: 70px
+    
+  .qaBox
+    padding: 28px 45px 
+    background-color: #fff
+    border: 1px solid rgba($c-y,.8)
+    border-radius: 8px
+    margin-top: 15px
+    cursor: pointer
+    &.active
+      .qBox 
+        &::after
+          transform: rotate(0deg)
+      .aBox
+        margin-top: 20px 
+        opacity: 1
+
+    .qBox 
+      font-size: 24px
+      position: relative
+      padding-left: 45px
+      line-height: 150%
+      &::before
+        content: 'Q: '
+        position: absolute
+        top: 0
+        left: 0
+      &:after
+        position: absolute
+        content: ''
+        +bg('arr-u.png')
+        top: 8px
+        right: -15px
+        +dTime
+        transform: rotate(180deg)
+    .aBox
+      font-size: 20px
+      color: #383838
+      line-height: 170%
+      overflow: hidden
+      opacity: 0
+      // margin-top: 25px
+      padding-left: 45px
+      height: 0
+      +dTime
+      img
+        display: block
+      a
+        color: blue
+
+        
+    
+      
