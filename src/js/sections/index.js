@@ -16,9 +16,9 @@ function init_index_swiper() {
   var mySwiper = new Swiper('.swiper-container-index', {
     loop: true,
     speed: 800,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
     pagination: {
       el: '.sp-index',
     },
