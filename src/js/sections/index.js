@@ -10,6 +10,8 @@ function init_index() {
   initJbtn();
 
   initVideoBtn();
+
+  
 }
 
 function init_index_swiper() {
@@ -111,6 +113,8 @@ function initWorks() {
   const outerSlider = new Swiper('.swiper-container-outer', {
     // loop: true,
     speed: 800,
+    spaceBetween: 100,
+
     // pagination: {
     //   el: silder +' .swiper-pagination',
     // },

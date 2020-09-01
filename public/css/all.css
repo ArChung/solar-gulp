@@ -1065,7 +1065,8 @@ p {
     margin: 0 auto; }
 
 #benefits {
-  background-color: #fcbd50; }
+  background-color: #fcbd50;
+  overflow: hidden; }
   #benefits .picTxt {
     display: -webkit-box;
     display: -ms-flexbox;

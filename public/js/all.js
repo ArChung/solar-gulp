@@ -553,6 +553,7 @@ init_base();
 
 $(document).ready(() => {
   init_index();
+  init_animation();
 });
 
 
@@ -567,6 +568,37 @@ $(document).ready(() => {
 // }
 
 
+function init_animation() {
+
+  inView.offset(100);
+
+  TweenMax.set('.ani-item', {
+    alpha: 0,
+    y: 80 });
+
+
+  TweenMax.set('.ani-item.ani-left', {
+    x: 80,
+    y: 0 });
+
+
+  TweenMax.set('.ani-item.ani-right', {
+    alpha: 0,
+    x: -80,
+    y: 0 });
+
+
+  inView('.ani-item').on('enter', el => {
+    console.log(el);
+    TweenMax.to(el, .8, {
+      alpha: 1,
+      y: 0,
+      x: 0 });
+
+
+  });
+
+}
 function init_index() {
 
   init_index_swiper();
@@ -579,6 +611,8 @@ function init_index() {
   initJbtn();
 
   initVideoBtn();
+
+
 }
 
 function init_index_swiper() {
@@ -680,6 +714,8 @@ function initWorks() {
   const outerSlider = new Swiper('.swiper-container-outer', {
     // loop: true,
     speed: 800,
+    spaceBetween: 100,
+
     // pagination: {
     //   el: silder +' .swiper-pagination',
     // },

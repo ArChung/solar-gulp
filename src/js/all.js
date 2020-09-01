@@ -3,6 +3,7 @@ init_base();
 
 $(document).ready(() => {
   init_index();
+  init_animation();
 });
 
 
