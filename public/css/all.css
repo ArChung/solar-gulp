@@ -1105,7 +1105,7 @@ p {
     background-color: white;
     width: 550px;
     overflow-y: scroll;
-    height: 600px; }
+    height: 450px; }
     #works .txtBox .txt-container {
       width: 100%;
       padding: 30px 20px;
@@ -1125,6 +1125,7 @@ p {
     border-radius: 50px;
     font-size: 18px;
     cursor: pointer;
+    margin-bottom: 25px;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
