@@ -8,6 +8,8 @@ html,body
   color: $c-b
   font-size: 20px
   letter-spacing: 0.06em
+  +phone 
+    font-size: 24px
 
 .swiper-container
   width: 100%
@@ -111,6 +113,10 @@ html,body
     color: rgba(white,.5)
     text-transform: uppercase
     white-space: nowrap
+    +phone 
+      font-size: 50px
+      top: -30px
+      left: -10px
     &.s-en
       font-size: 64px
   &.ta-c

@@ -9,11 +9,15 @@
     height: calc(100vh - 60px)
     max-height: 700px
     +coverBg
+    +phone 
+      max-height: 500px
 
   .container
     max-width: 1024px
     padding: 0 50px
     padding-top: 100px
+    +phone 
+      padding-top: 24px
     .y-btn
       margin-top: 18px
     
@@ -24,10 +28,14 @@
       letter-spacing: 0.15em
       color: white
       text-shadow: 2px 2px 5px rgba(black,.5)
-      stong
+      strong
         color: $c-y
       .t2 
         margin-left: 70px
+      +phone 
+        font-size: 40px
+        &.sm-t
+          font-size: 35px
 
 
 #about
@@ -41,11 +49,16 @@
     font-size: 30px
     font-weight: 500
   .pic
-    +bg('demo-1.png')
+    +ratioBg('demo-1.png')
     position: absolute
     bottom: -120px
     left: 50%
     transform: translate(-50%, 0)
+    +phone 
+      +ratioBg('demo-1-m.png')
+      bottom: 0
+      left: 0
+      transform: translate(0, 0)
 
 
 #resources
@@ -121,16 +134,31 @@
   overflow: hidden
   .picTxt
     display: flex
+    &.rv
+      +pc
+        flex-direction: row-reverse
+
     >*
       width: 50%
       padding: 130px 0 100px
+    +phone
+      flex-direction: column
+      .pic
+        +ratio(1,.8)
+        padding: 0
+      > *
+        width: 100%
+        padding: 100px 0
+
     .pic  
       +coverBg
+      
     .txtBox
       img
         display: block
         margin: 0 auto
         margin-top: 60px
+        
       .p-title
         .en
           color: rgba(white,.2)
@@ -151,6 +179,10 @@
 
   .swiper-container-outer
     margin-top: 70px
+    .swiper-slide-outer
+      display: flex
+      +phone
+        flex-direction: column
   .swiper-container-inner
     .swiper-slide
       +coverBg
@@ -160,6 +192,8 @@
     width: 550px
     overflow-y: scroll
     height: 450px
+    +phone 
+      height: auto
     .txt-container
       width: 100%
       padding: 30px 20px  
@@ -174,8 +208,11 @@
       margin-bottom: 30px
       font-size: 18px
       letter-spacing: auto
+      +phone 
+        font-size: 24px
   .pic
-    // flex: 1
+    +phone
+      height: 400px
   .videoBtn
     padding: 8px 32px
     background-color: $c-y
@@ -208,6 +245,8 @@
       margin: 0 10px
       cursor: pointer
       +dTime
+      +phone
+        margin: 0 5px
       &:hover
         background-color: rgba($c-y,1)
       &.active
@@ -221,6 +260,8 @@
   height: 466px
   +coverBg('banner.jpg')
   background-position: 100% 50%
+  +phone
+    height: 300px
 
 
 #qa
@@ -278,5 +319,15 @@
         color: blue
 
         
-    
-      
+#fb-btn
+  position: fixed
+  z-index: 5
+  +bg('fbBtn.png')
+  cursor: pointer
+  display: block
+  right: 16px
+  bottom: 16px
+  +dTime(.3s)
+  &:hover
+    opacity: .9
+    transform: scale(1.05)

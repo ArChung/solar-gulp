@@ -1,4 +1,13 @@
 
+$menu-point: 1200px
+
+=menuPoint-pc
+  @media screen and (min-width: $menu-point + 1)
+    @content 	
+=menuPoint-phone
+  @media screen and (max-width: $menu-point)
+    @content 	
+
 =header($height,$bg-color)
   width: 100%
   height: $height * 1px
@@ -17,9 +26,23 @@
     padding-left: 15px
     // height: 90px
   .menuBtn
-    +pc
+    +menuPoint-pc
       display: none 
-    
+    width: 64px
+    height: 100%
+    padding: 16px 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    cursor: pointer
+    div 
+      display: block
+      height: 5px
+      width: 100%
+      background-color: black
+
+
+      
 
     
 
@@ -40,10 +63,12 @@
     align-items: center
     justify-content: center
     font-size: $font-size * 1px
+    
 
 
-  +phone 
+  +menuPoint-phone
     +full
+    
     position: fixed
     justify-content: center
     align-items: center
@@ -61,6 +86,7 @@
       flex-direction: column
       li 
         margin: 24px 0
+        font-size: $font-size * 2px
         &.active
           padding: 20px 10px
     
@@ -83,7 +109,7 @@
   #menu
     +menu($c-b,18)
     +phone
-      background-color: black
+      background-color: $c-y
 
     ul
       li

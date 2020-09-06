@@ -506,6 +506,9 @@ html, body {
   color: #212e34;
   font-size: 20px;
   letter-spacing: 0.06em; }
+  @media screen and (max-width: 768px) {
+    html, body {
+      font-size: 24px; } }
 
 .swiper-container {
   width: 100%;
@@ -620,6 +623,11 @@ html, body {
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     white-space: nowrap; }
+    @media screen and (max-width: 768px) {
+      .p-title .en {
+        font-size: 50px;
+        top: -30px;
+        left: -10px; } }
     .p-title .en.s-en {
       font-size: 64px; }
   .p-title.ta-c .en {
@@ -699,9 +707,29 @@ p {
     #header {
       padding: 0;
       padding-left: 15px; } }
-  @media screen and (min-width: 769px) {
-    #header .menuBtn {
-      display: none; } }
+  #header .menuBtn {
+    width: 64px;
+    height: 100%;
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer; }
+    @media screen and (min-width: 1201px) {
+      #header .menuBtn {
+        display: none; } }
+    #header .menuBtn div {
+      display: block;
+      height: 5px;
+      width: 100%;
+      background-color: black; }
   #header #logo {
     width: 171px;
     height: 34px;
@@ -732,7 +760,7 @@ p {
           -ms-flex-pack: center;
               justify-content: center;
       font-size: 18px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       #header #menu {
         position: absolute;
         width: 100%;
@@ -767,12 +795,13 @@ p {
               -ms-flex-direction: column;
                   flex-direction: column; }
           #header #menu ul li {
-            margin: 24px 0; }
+            margin: 24px 0;
+            font-size: 36px; }
             #header #menu ul li.active {
               padding: 20px 10px; } }
     @media screen and (max-width: 768px) {
       #header #menu {
-        background-color: black; } }
+        background-color: #fcbd50; } }
     #header #menu ul li {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
@@ -793,6 +822,12 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 1200px; }
+    @media screen and (max-width: 768px) {
+      #footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   #footer .contantWrap {
     padding-top: 20px; }
   #footer .contactBox ul li {
@@ -809,6 +844,9 @@ p {
   #footer .mapWrap {
     width: 550px;
     height: 350px; }
+    @media screen and (max-width: 768px) {
+      #footer .mapWrap {
+        margin-top: 30px; } }
     #footer .mapWrap iframe {
       width: 100%;
       height: 100%; }
@@ -913,10 +951,16 @@ p {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 768px) {
+      #index .swiper-slide {
+        max-height: 500px; } }
   #index .container {
     max-width: 1024px;
     padding: 0 50px;
     padding-top: 100px; }
+    @media screen and (max-width: 768px) {
+      #index .container {
+        padding-top: 24px; } }
     #index .container .y-btn {
       margin-top: 18px; }
     #index .container .txt {
@@ -926,10 +970,15 @@ p {
       letter-spacing: 0.15em;
       color: white;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
-      #index .container .txt stong {
+      #index .container .txt strong {
         color: #fcbd50; }
       #index .container .txt .t2 {
         margin-left: 70px; }
+      @media screen and (max-width: 768px) {
+        #index .container .txt {
+          font-size: 40px; }
+          #index .container .txt.sm-t {
+            font-size: 35px; } }
 
 #about {
   background-color: #c2e9ed;
@@ -942,8 +991,11 @@ p {
     font-size: 30px;
     font-weight: 500; }
   #about .pic {
-    width: 1439px;
-    height: 898px;
+    max-width: 1439px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     background-image: url("../images/demo-1.png");
     position: absolute;
     bottom: -120px;
@@ -951,6 +1003,29 @@ p {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
+    #about .pic:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 62.40445%; }
+    @media screen and (max-width: 768px) {
+      #about .pic {
+        max-width: 908px;
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url("../images/demo-1-m.png");
+        bottom: 0;
+        left: 0;
+        -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+                transform: translate(0, 0); }
+        #about .pic:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 70.48458%; } }
 
 #resources {
   background-color: #f8edd9; }
@@ -1071,9 +1146,38 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media screen and (min-width: 769px) {
+      #benefits .picTxt.rv {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse; } }
     #benefits .picTxt > * {
       width: 50%;
       padding: 130px 0 100px; }
+    @media screen and (max-width: 768px) {
+      #benefits .picTxt {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        #benefits .picTxt .pic {
+          position: relative;
+          padding: 0; }
+          #benefits .picTxt .pic:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 80%; }
+          #benefits .picTxt .pic > * {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; }
+        #benefits .picTxt > * {
+          width: 100%;
+          padding: 100px 0; } }
     #benefits .picTxt .pic {
       background-size: cover;
       background-position: 50% 50%;
@@ -1097,6 +1201,16 @@ p {
     width: 100%; }
   #works .swiper-container-outer {
     margin-top: 70px; }
+    #works .swiper-container-outer .swiper-slide-outer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media screen and (max-width: 768px) {
+        #works .swiper-container-outer .swiper-slide-outer {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
   #works .swiper-container-inner .swiper-slide {
     background-size: cover;
     background-position: 50% 50%;
@@ -1106,6 +1220,9 @@ p {
     width: 550px;
     overflow-y: scroll;
     height: 450px; }
+    @media screen and (max-width: 768px) {
+      #works .txtBox {
+        height: auto; } }
     #works .txtBox .txt-container {
       width: 100%;
       padding: 30px 20px;
@@ -1118,6 +1235,12 @@ p {
       margin-bottom: 30px;
       font-size: 18px;
       letter-spacing: auto; }
+      @media screen and (max-width: 768px) {
+        #works .txtBox p {
+          font-size: 24px; } }
+  @media screen and (max-width: 768px) {
+    #works .pic {
+      height: 400px; } }
   #works .videoBtn {
     padding: 8px 32px;
     background-color: #fcbd50;
@@ -1168,6 +1291,9 @@ p {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
+      @media screen and (max-width: 768px) {
+        #works .sliderBtns .sliderBtn {
+          margin: 0 5px; } }
       #works .sliderBtns .sliderBtn:hover {
         background-color: #fcbd50; }
       #works .sliderBtns .sliderBtn.active {
@@ -1182,6 +1308,9 @@ p {
   background-repeat: no-repeat;
   background-image: url("../images/banner.jpg");
   background-position: 100% 50%; }
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 300px; } }
 
 #qa {
   background-color: #f2f2f2; }
@@ -1240,5 +1369,24 @@ p {
         display: block; }
       #qa .qaBox .aBox a {
         color: blue; }
+
+#fb-btn {
+  position: fixed;
+  z-index: 5;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/fbBtn.png");
+  cursor: pointer;
+  display: block;
+  right: 16px;
+  bottom: 16px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  #fb-btn:hover {
+    opacity: .9;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
 
 /*# sourceMappingURL=all.css.map */

@@ -174,7 +174,7 @@ $compass-imagehelper-imagesmap: (
   'chat-01.png': (
     width: '789',
     height: '773',
-    hash: 'ed7db749289d79f709cd9678b41a8d80'
+    hash: 'f71b8e50b428be8d489d29ff924c3ea5'
   ),
   'chat-02.png': (
     width: '789',
@@ -216,6 +216,11 @@ $compass-imagehelper-imagesmap: (
     height: '762',
     hash: '2427f4da6022b57b2802022121746936'
   ),
+  'demo-1-m.png': (
+    width: '908',
+    height: '640',
+    hash: '4b8fd056cb01d333e4d1ae5d9c9df3b9'
+  ),
   'demo-1.png': (
     width: '1439',
     height: '898',
@@ -245,6 +250,11 @@ $compass-imagehelper-imagesmap: (
     width: '1013',
     height: '760',
     hash: 'ab694ee2d730cb68f52a8430f188a70b'
+  ),
+  'fbBtn.png': (
+    width: '48',
+    height: '48',
+    hash: 'fa50e302c40a17c86c7c2cca8e7f24a0'
   ),
   'g-01.jpg': (
     width: '921',
@@ -312,9 +322,9 @@ $compass-imagehelper-imagesmap: (
     hash: '9b493cad211e6a51d43ffce6a248adb4'
   ),
   'index-04.jpg': (
-    width: '1336',
-    height: '664',
-    hash: 'dc48cc5d6758536c40853e3687412a9a'
+    width: '1570',
+    height: '1044',
+    hash: 'c2411b098045fa96465dea227b5dce6c'
   ),
   'index-05.jpg': (
     width: '1336',
@@ -322,9 +332,14 @@ $compass-imagehelper-imagesmap: (
     hash: '5a4cde202c2e0008fa3f42e96b763d6a'
   ),
   'index-06.jpg': (
-    width: '1336',
-    height: '664',
-    hash: '07a7ec291907270206c2ad1100bfa909'
+    width: '1073',
+    height: '804',
+    hash: '55f7e7a1dcea47d65fe0ea856a0c4153'
+  ),
+  'index-07.jpg': (
+    width: '1349',
+    height: '897',
+    hash: 'ecf881dc47b3ab199372c003b53c1270'
   ),
   'logo-footer.png': (
     width: '268',
@@ -529,7 +544,7 @@ $compass-imagehelper-imagesmap: (
   // path: chat-01.png;
   // fullname: chat-01-png;
   // mime: image/png;
-  // hash: ed7db749289d79f709cd9678b41a8d80;
+  // hash: f71b8e50b428be8d489d29ff924c3ea5;
   background-image: image-url('chat-01.png');
 }
 
@@ -661,6 +676,22 @@ $compass-imagehelper-imagesmap: (
   background-image: image-url('d-02.jpg');
 }
 
+%demo-1-m-png {
+  // Available properties:
+  // prefix: ;
+  // width: 908;
+  // height: 640;
+  // filename: demo-1-m.png;
+  // basename: demo-1-m;
+  // dirname: images;
+  // ext: .png;
+  // path: demo-1-m.png;
+  // fullname: demo-1-m-png;
+  // mime: image/png;
+  // hash: 4b8fd056cb01d333e4d1ae5d9c9df3b9;
+  background-image: image-url('demo-1-m.png');
+}
+
 %demo-1-png {
   // Available properties:
   // prefix: ;
@@ -755,6 +786,22 @@ $compass-imagehelper-imagesmap: (
   // mime: image/jpeg;
   // hash: ab694ee2d730cb68f52a8430f188a70b;
   background-image: image-url('f-02.jpg');
+}
+
+%fbBtn-png {
+  // Available properties:
+  // prefix: ;
+  // width: 48;
+  // height: 48;
+  // filename: fbBtn.png;
+  // basename: fbBtn;
+  // dirname: images;
+  // ext: .png;
+  // path: fbBtn.png;
+  // fullname: fbBtn-png;
+  // mime: image/png;
+  // hash: fa50e302c40a17c86c7c2cca8e7f24a0;
+  background-image: image-url('fbBtn.png');
 }
 
 %g-01-jpg {
@@ -968,8 +1015,8 @@ $compass-imagehelper-imagesmap: (
 %index-04-jpg {
   // Available properties:
   // prefix: ;
-  // width: 1336;
-  // height: 664;
+  // width: 1570;
+  // height: 1044;
   // filename: index-04.jpg;
   // basename: index-04;
   // dirname: images;
@@ -977,7 +1024,7 @@ $compass-imagehelper-imagesmap: (
   // path: index-04.jpg;
   // fullname: index-04-jpg;
   // mime: image/jpeg;
-  // hash: dc48cc5d6758536c40853e3687412a9a;
+  // hash: c2411b098045fa96465dea227b5dce6c;
   background-image: image-url('index-04.jpg');
 }
 
@@ -1000,8 +1047,8 @@ $compass-imagehelper-imagesmap: (
 %index-06-jpg {
   // Available properties:
   // prefix: ;
-  // width: 1336;
-  // height: 664;
+  // width: 1073;
+  // height: 804;
   // filename: index-06.jpg;
   // basename: index-06;
   // dirname: images;
@@ -1009,8 +1056,24 @@ $compass-imagehelper-imagesmap: (
   // path: index-06.jpg;
   // fullname: index-06-jpg;
   // mime: image/jpeg;
-  // hash: 07a7ec291907270206c2ad1100bfa909;
+  // hash: 55f7e7a1dcea47d65fe0ea856a0c4153;
   background-image: image-url('index-06.jpg');
+}
+
+%index-07-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 1349;
+  // height: 897;
+  // filename: index-07.jpg;
+  // basename: index-07;
+  // dirname: images;
+  // ext: .jpg;
+  // path: index-07.jpg;
+  // fullname: index-07-jpg;
+  // mime: image/jpeg;
+  // hash: ecf881dc47b3ab199372c003b53c1270;
+  background-image: image-url('index-07.jpg');
 }
 
 %logo-footer-png {

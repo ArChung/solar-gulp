@@ -7,6 +7,8 @@
   .container
     justify-content: space-between
     max-width: 1200px
+    +phone
+      flex-direction: column
   .contantWrap
     padding-top: 20px
   .contactBox
@@ -24,6 +26,9 @@
   .mapWrap
     width: 550px
     height: 350px
+    +phone
+      margin-top: 30px
+
     iframe
       width: 100%
       height: 100%

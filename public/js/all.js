@@ -611,8 +611,14 @@ function init_index() {
   initJbtn();
 
   initVideoBtn();
+  initMenu();
 
+}
 
+function initMenu() {
+  $('#header .menuBtn,#menu').click(function () {
+    $('#header #menu').toggleClass('active');
+  });
 }
 
 function init_index_swiper() {
