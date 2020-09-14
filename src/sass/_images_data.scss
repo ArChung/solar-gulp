@@ -147,11 +147,6 @@ $compass-imagehelper-imagesmap: (
     hash: '37f429635a79f47fb84e85c71d7ec03f'
   ),
   'b-01.jpg': (
-    width: '548',
-    height: '467',
-    hash: 'd6debd40c1aef503c8f531a2a5eaab68'
-  ),
-  'b-02.jpg': (
     width: '623',
     height: '352',
     hash: '0c06f3da2681dcfdbc9ca167e23b7e1c'
@@ -162,9 +157,9 @@ $compass-imagehelper-imagesmap: (
     hash: '0a5082cf195fecbfc77f0b51f4b1cb93'
   ),
   'c-01.jpg': (
-    width: '722',
-    height: '538',
-    hash: '301b0b4e76862c7eeaa7f2b368803735'
+    width: '800',
+    height: '600',
+    hash: 'e3535c43a086ded0d0fa4a93df211509'
   ),
   'c-02.jpg': (
     width: '372',
@@ -455,8 +450,8 @@ $compass-imagehelper-imagesmap: (
 %b-01-jpg {
   // Available properties:
   // prefix: ;
-  // width: 548;
-  // height: 467;
+  // width: 623;
+  // height: 352;
   // filename: b-01.jpg;
   // basename: b-01;
   // dirname: images;
@@ -464,24 +459,8 @@ $compass-imagehelper-imagesmap: (
   // path: b-01.jpg;
   // fullname: b-01-jpg;
   // mime: image/jpeg;
-  // hash: d6debd40c1aef503c8f531a2a5eaab68;
-  background-image: image-url('b-01.jpg');
-}
-
-%b-02-jpg {
-  // Available properties:
-  // prefix: ;
-  // width: 623;
-  // height: 352;
-  // filename: b-02.jpg;
-  // basename: b-02;
-  // dirname: images;
-  // ext: .jpg;
-  // path: b-02.jpg;
-  // fullname: b-02-jpg;
-  // mime: image/jpeg;
   // hash: 0c06f3da2681dcfdbc9ca167e23b7e1c;
-  background-image: image-url('b-02.jpg');
+  background-image: image-url('b-01.jpg');
 }
 
 %banner-jpg {
@@ -503,8 +482,8 @@ $compass-imagehelper-imagesmap: (
 %c-01-jpg {
   // Available properties:
   // prefix: ;
-  // width: 722;
-  // height: 538;
+  // width: 800;
+  // height: 600;
   // filename: c-01.jpg;
   // basename: c-01;
   // dirname: images;
@@ -512,7 +491,7 @@ $compass-imagehelper-imagesmap: (
   // path: c-01.jpg;
   // fullname: c-01-jpg;
   // mime: image/jpeg;
-  // hash: 301b0b4e76862c7eeaa7f2b368803735;
+  // hash: e3535c43a086ded0d0fa4a93df211509;
   background-image: image-url('c-01.jpg');
 }
 
