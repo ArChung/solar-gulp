@@ -955,9 +955,9 @@ p {
       #index .swiper-slide {
         max-height: 500px; } }
   #index .container {
-    max-width: 1024px;
+    max-width: 1440px;
     padding: 0 50px;
-    padding-top: 100px; }
+    padding-top: 50px; }
     @media screen and (max-width: 768px) {
       #index .container {
         padding-top: 24px; } }
@@ -969,7 +969,7 @@ p {
       line-height: 150%;
       letter-spacing: 0.15em;
       color: white;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+      text-shadow: 2px 2px 5px black, 2px 2px 8px rgba(0, 0, 0, 0.5); }
       #index .container .txt strong {
         color: #fcbd50; }
       #index .container .txt .t2 {
@@ -1227,6 +1227,10 @@ p {
       width: 100%;
       padding: 30px 20px;
       line-height: 120%; }
+    #works .txtBox .p-content {
+      background-color: #fcbd50;
+      padding: 10px 15px;
+      color: white; }
     #works .txtBox h2 {
       margin-bottom: 30px;
       font-size: 24px; }
