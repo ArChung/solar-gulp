@@ -92,6 +92,7 @@ function initWorks() {
     const silder = `.sc-${index}`;
 
     const pp = new Swiper(silder, {
+      lazy: true,
       loop: true,
       speed: 800,
       pagination: {

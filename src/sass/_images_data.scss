@@ -271,6 +271,16 @@ $compass-imagehelper-imagesmap: (
     height: '761',
     hash: '8558e66a3f956b12f29c6329850d6eb8'
   ),
+  'i-01.jpg': (
+    width: '943',
+    height: '641',
+    hash: 'b8a0d56584e7b180fb16d0be157f94f6'
+  ),
+  'i-02.jpg': (
+    width: '646',
+    height: '417',
+    hash: '4fc2e60e186661721f4e8b3e03c5d7cf'
+  ),
   'i-fax.png': (
     width: '21',
     height: '21',
@@ -335,6 +345,36 @@ $compass-imagehelper-imagesmap: (
     width: '1349',
     height: '897',
     hash: 'ecf881dc47b3ab199372c003b53c1270'
+  ),
+  'j-01.jpg': (
+    width: '871',
+    height: '535',
+    hash: '2036ab05e0146180c8bb9e50b4b472be'
+  ),
+  'j-02.jpg': (
+    width: '813',
+    height: '485',
+    hash: 'adbe52a76ab590fee30eb3e74dea26f4'
+  ),
+  'k-01.jpg': (
+    width: '966',
+    height: '653',
+    hash: 'b793badc555f418ab6bdcf8798d43358'
+  ),
+  'k-02.jpg': (
+    width: '845',
+    height: '680',
+    hash: 'b673b2f4dc85d0f7d74a79f7aa4def1e'
+  ),
+  'l-01.jpg': (
+    width: '876',
+    height: '576',
+    hash: 'bb552d3757c56cc45cd984e4d79548ca'
+  ),
+  'l-02.jpg': (
+    width: '794',
+    height: '591',
+    hash: '46edcb605db178b62cb3d8f00979edc7'
   ),
   'logo-footer.png': (
     width: '268',
@@ -847,6 +887,38 @@ $compass-imagehelper-imagesmap: (
   background-image: image-url('h-02.jpg');
 }
 
+%i-01-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 943;
+  // height: 641;
+  // filename: i-01.jpg;
+  // basename: i-01;
+  // dirname: images;
+  // ext: .jpg;
+  // path: i-01.jpg;
+  // fullname: i-01-jpg;
+  // mime: image/jpeg;
+  // hash: b8a0d56584e7b180fb16d0be157f94f6;
+  background-image: image-url('i-01.jpg');
+}
+
+%i-02-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 646;
+  // height: 417;
+  // filename: i-02.jpg;
+  // basename: i-02;
+  // dirname: images;
+  // ext: .jpg;
+  // path: i-02.jpg;
+  // fullname: i-02-jpg;
+  // mime: image/jpeg;
+  // hash: 4fc2e60e186661721f4e8b3e03c5d7cf;
+  background-image: image-url('i-02.jpg');
+}
+
 %i-fax-png {
   // Available properties:
   // prefix: ;
@@ -1053,6 +1125,102 @@ $compass-imagehelper-imagesmap: (
   // mime: image/jpeg;
   // hash: ecf881dc47b3ab199372c003b53c1270;
   background-image: image-url('index-07.jpg');
+}
+
+%j-01-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 871;
+  // height: 535;
+  // filename: j-01.jpg;
+  // basename: j-01;
+  // dirname: images;
+  // ext: .jpg;
+  // path: j-01.jpg;
+  // fullname: j-01-jpg;
+  // mime: image/jpeg;
+  // hash: 2036ab05e0146180c8bb9e50b4b472be;
+  background-image: image-url('j-01.jpg');
+}
+
+%j-02-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 813;
+  // height: 485;
+  // filename: j-02.jpg;
+  // basename: j-02;
+  // dirname: images;
+  // ext: .jpg;
+  // path: j-02.jpg;
+  // fullname: j-02-jpg;
+  // mime: image/jpeg;
+  // hash: adbe52a76ab590fee30eb3e74dea26f4;
+  background-image: image-url('j-02.jpg');
+}
+
+%k-01-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 966;
+  // height: 653;
+  // filename: k-01.jpg;
+  // basename: k-01;
+  // dirname: images;
+  // ext: .jpg;
+  // path: k-01.jpg;
+  // fullname: k-01-jpg;
+  // mime: image/jpeg;
+  // hash: b793badc555f418ab6bdcf8798d43358;
+  background-image: image-url('k-01.jpg');
+}
+
+%k-02-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 845;
+  // height: 680;
+  // filename: k-02.jpg;
+  // basename: k-02;
+  // dirname: images;
+  // ext: .jpg;
+  // path: k-02.jpg;
+  // fullname: k-02-jpg;
+  // mime: image/jpeg;
+  // hash: b673b2f4dc85d0f7d74a79f7aa4def1e;
+  background-image: image-url('k-02.jpg');
+}
+
+%l-01-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 876;
+  // height: 576;
+  // filename: l-01.jpg;
+  // basename: l-01;
+  // dirname: images;
+  // ext: .jpg;
+  // path: l-01.jpg;
+  // fullname: l-01-jpg;
+  // mime: image/jpeg;
+  // hash: bb552d3757c56cc45cd984e4d79548ca;
+  background-image: image-url('l-01.jpg');
+}
+
+%l-02-jpg {
+  // Available properties:
+  // prefix: ;
+  // width: 794;
+  // height: 591;
+  // filename: l-02.jpg;
+  // basename: l-02;
+  // dirname: images;
+  // ext: .jpg;
+  // path: l-02.jpg;
+  // fullname: l-02-jpg;
+  // mime: image/jpeg;
+  // hash: 46edcb605db178b62cb3d8f00979edc7;
+  background-image: image-url('l-02.jpg');
 }
 
 %logo-footer-png {
