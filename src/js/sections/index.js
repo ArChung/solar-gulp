@@ -121,6 +121,7 @@ function initWorks() {
     // loop: true,
     speed: 800,
     spaceBetween: 100,
+    effect: 'fade',
 
     // pagination: {
     //   el: silder +' .swiper-pagination',
